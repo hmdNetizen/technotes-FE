@@ -36,6 +36,8 @@ const Login = () => {
       dispatch(setCredentials({ accessToken }));
       setUsername("");
       setPassword("");
+
+      navigate("/dash");
     } catch (error) {
       if (!error.status) {
         setErrMsg("No response from server");
