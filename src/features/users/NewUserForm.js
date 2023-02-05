@@ -74,6 +74,8 @@ const NewUserForm = () => {
     ? "form__input--incomplete"
     : "";
 
+  console.log(error);
+
   const content = (
     <>
       <p className={errClass}>{error?.data?.message}</p>

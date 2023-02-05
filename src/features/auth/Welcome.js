@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import useTitle from "../../hooks/useTitle";
 
 const Welcome = () => {
+  useTitle("TechNotes | Dashboard");
   const date = new Date();
 
   const { isAdmin, isManager, username } = useAuth();
