@@ -6,7 +6,7 @@ import { memo } from "react";
 import { useGetNotesQuery } from "./notesApiSlice";
 
 const Note = ({ noteId }) => {
-  const { note } = useGetNotesQuery("NotesList", {
+  const { note } = useGetNotesQuery("notesList", {
     selectFromResult: ({ data }) => ({
       note: data?.entities[noteId],
     }),
